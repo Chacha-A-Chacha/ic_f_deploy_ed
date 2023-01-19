@@ -113,13 +113,13 @@ body {
 }
 /* End Base */
 
-/* Menu 
+/*Menu */
 .menu {
   width: 100%;
-  background: linear-gradient(to right, #0e0e0e 70%, #142d2a);
-  padding: 12px 0;
+  background: #01baef;
+  padding: 8px 0;
 }
-*/
+
 .menu .container {
   justify-content: space-between;
 }
@@ -133,7 +133,7 @@ body {
 }
 
 .logo img {
-  width: 80px;
+  width: 300px;
   height: auto;
 }
 
@@ -142,20 +142,25 @@ body {
 }
 
 .nav-item {
-  display: inline-block;
-  margin-right: 30px;
-  font-size: 18px;
-  font-weight: 400;
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .nav-item a {
-  text-decoration: none;
-  color: #fff;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: all 0.3s linear 0s;
 }
 
 .nav-item:hover a {
-  color: #29a396;
-  transition: 0.3s linear;
+    color: #00ffdd;
+    padding-bottom: 7px;
+    border-bottom: 2px solid #01fff2;
+    transition: 0.3s linear;
 }
 
 .nav-item:last-of-type {
