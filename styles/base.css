@@ -105,7 +105,7 @@ body {
 
 .secondary {
   font-size: 25px;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .tertiary {
@@ -212,7 +212,7 @@ body {
 }
 
 .header h1 {
-  font-size: 70px;
+  font-size: 64px;
   font-weight: 700;
 }
 
