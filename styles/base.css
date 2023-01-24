@@ -340,7 +340,7 @@ ion-icon {
   
   @media (max-width: 950px) {
     .contact-container{
-      width: 80%;
+      width: 100%;
       padding: 30px 40px 40px 30px ;
     }
     .contact-container .content .right-side{
@@ -350,8 +350,9 @@ ion-icon {
   }
   @media (max-width: 820px) {
     .contact-container{
-      margin: 0px 48px;
-      height: 100%;
+        width: 100%;
+        margin: 0px 16px;
+        height: 100%;
     }
     .contact-container .content{
       flex-direction: column-reverse;
