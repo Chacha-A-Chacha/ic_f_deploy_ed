@@ -14,7 +14,7 @@ body{
 
 */
 footer{
-  background: #009ea7;
+  background: #2b3535;
   width: 100%;
   bottom: 0;
   left: 0;
@@ -49,52 +49,57 @@ footer .footer-content .top{
 }
 .footer-content .top .media-icons{
   display: flex;
+  
 }
 .footer-content .top .media-icons a{
-  height: 48px;
-  width: 48px;
+  height: 40px;
+  width: 40px;
   margin: 0 8px;
-  border-radius: 50%;
+  align-items: center;
+  border-radius: 4px;
   text-align: center;
-  line-height: 40px;
-  color: #fff;
-  font-size: 17px;
+  font-size: 21px;
   text-decoration: none;
   transition: all 0.4s ease;
 }
 .top .media-icons a:nth-child(1){
-  background: #4267B2;
+    color: #4267B2;
+    background: none;
 }
 .top .media-icons a:nth-child(1):hover{
   color: #4267B2;
   background: #fff;
 }
 .top .media-icons a:nth-child(2){
-  background: #1DA1F2;
+    color: #1D9BF0;
+    background: none;
 }
 .top .media-icons a:nth-child(2):hover{
-  color: #1DA1F2;
+  color: #1D9BF0;
   background: #fff;
 }
 .top .media-icons a:nth-child(3){
-  background: #E1306C;
+    color: #E1306C;
+    background: none;
 }
 .top .media-icons a:nth-child(3):hover{
   color: #E1306C;
   background: #fff;
 }
 .top .media-icons a:nth-child(4){
-  background: #0077B5;
+    color: #0A66C2;
+    background: none;
 }
 .top .media-icons a:nth-child(4):hover{
-  color: #0077B5;
+  color: #0A66C2;
   background: #fff;
 }
 .top .media-icons a:nth-child(5){
-  background: #FF0000;
+    color: #25D366;
+    background: none;
 }
 .top .media-icons a:nth-child(5):hover{
-  color: #FF0000;
+  color: #25D366;
   background: #fff;
 }
 footer .footer-content .link-boxes{

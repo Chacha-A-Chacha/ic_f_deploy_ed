@@ -24,6 +24,8 @@
 
         <!-- Fontawesome CDN Link -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
         <!-- Fontawesome CDN Link -->
     
     </head>
@@ -31,11 +33,11 @@
        
         <!--Navigation bar -->
      
-        <div class="menu">
+        <div class="menu" style="position:sticky;">
             <div class="container flex">
                 <!-- Mobile Button -->
                 <div class="mobile-btn">
-                    <ion-icon name="reorder-four-outline"></ion-icon>
+                    <ion-icon name="menu-outline"></ion-icon>
                 </div>
                 <div class="logo">
                     <img src="img/logo3.png" alt="" />
@@ -107,103 +109,159 @@
         <!-- End of About Us -->
 
         <!-- Team Section -->
-        <div class="w3-center container w3-container" style="padding: 48px 16px " id="OurSpeakers">
+        <div class="w3-center container w3-container" style="padding: 48px 16px;" id="OurSpeakers">
             <h3 class="primary mb">OUR SPEAKERS</h3>
-            <p class="w3-center w3-large secondary">The ones who run our Campuses</p>
-            <div class="w3-row-padding w3-grayscale" style="margin-top:16px">
-    
+            <p class="w3-center secondary">The ones who run our Campuses</p>
+            <div class="w3-row-padding" style="margin-top:16px;">
+                
                 <div class="w3-col l3 m6 w3-margin-bottom">
-                    <div class="w3-card">
+                    <div class="profile-card">
+                        <img src="./img/pst4.png" alt="" style="width:100%">
+                        <div class="w3-container">
+                            <h3>Rev. Daniel Munyoro</h3>
+                            <p class="w3-opacity">Founder, ICF</p>
+                            <p style="text-align: left;">A spirit-filled believer in the salvation of Jesus Christ who pursues an ongoing relationship with God, with several years of experience in church ministry. Experienced in both campus and youth ministry, with a love for all of God's children.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-col l3 m6 w3-margin-bottom">
+                    <div class="profile-card">
                         <img src="./img/pst7.png" alt="" style="width:100%">
                         <div class="w3-container">
                             <h3>Bishop Enock Mwita</h3>
                             <p class="w3-opacity">Bishop</p>
                             <p style="text-align: left;">Professional Summary. A spirit-filled believer in the salvation of Jesus Christ who pursues an ongoing relationship with God, with several years of experience in church ministry. Experienced in both campus and youth ministry, with a love for all of God's children.</p>
-                            <p><button class="contact mt"><i class=""></i> Contact</button></p>
+                            <!--
+                            <div class="profile-buttons">
+                                <a href="#" class="btn-2"><ion-icon name="call-outline"></ion-icon></a>
+                                <a href="#" class="btn-2"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+                            </div>
+                            <a href="#" class="btn-2"
+                                ><ion-icon name="arrow-redo-circle-outline"></ion-icon
+                            ></a>
+                            -->
                         </div>
                     </div>
                 </div>
 
                 <div class="w3-col l3 m6 w3-margin-bottom">
-                    <div class="w3-card">
+                    <div class="profile-card">
                         <img src="./img/pst6.png" alt="" style="width:100%">
                         <div class="w3-container">
                             <h3>Pastor Michael Bunyige</h3>
                             <p class="w3-opacity">Pastor, Msati</p>
                             <p style="text-align: left;">Professional Summary. A spirit-filled believer in the salvation of Jesus Christ who pursues an ongoing relationship with God, with several years of experience in church ministry. Experienced in both campus and youth ministry, with a love for all of God's children.</p>
-                            <p><button class="contact mt"><i class=""></i> Contact</button></p>
+                            
                         </div>
                     </div>
                 </div>
 
                 <div class="w3-col l3 m6 w3-margin-bottom" >
-                    <div class="w3-card" >
+                    <div class="profile-card" >
                         <img src="./img/pst1.png" alt="" style="width:100%">
                         <div class="w3-container">
                             <h3>Pastor Emmanuel Wambura</h3>
                             <p class="w3-opacity ">Pastor, Nyagisya</p>
                             <p style="text-align: left;">Professional Summary. A spirit-filled believer in the salvation of Jesus Christ who pursues an ongoing relationship with God, with several years of experience in church ministry. Experienced in both campus and youth ministry, with a love for all of God's children.</p>
-                            <p><button class="contact mt"><i class=""></i> Contact</button></p>
+                            
                         </div>
                     </div>
                 </div>
 
                 <div class="w3-col l3 m6 w3-margin-bottom">
-                    <div class="w3-card">
+                    <div class="profile-card">
                         <img src="./img/pst3.png" alt="" style="width:100%">
                         <div class="w3-container">
                             <h3>Pastor Juliana Anthony</h3>
                             <p class="w3-opacity">Pastor Kebobora</p>
                             <p style="text-align: left;">Professional Summary. A spirit-filled believer in the salvation of Jesus Christ who pursues an ongoing relationship with God, with several years of experience in church ministry. Experienced in both campus and youth ministry, with a love for all of God's children.</p>
-                            <p><button class="contact mt"><i class=""></i> Contact</button></p>
+                            
                         </div>
                     </div>
                 </div>
 
                 <div class="w3-col l3 m6 w3-margin-bottom">
-                    <div class="w3-card">
+                    <div class="profile-card">
                         <img src="./img/pst5.png" alt="" style="width:100%">
                         <div class="w3-container">
                             <h3>Pastor Johaness Mwita</h3>
                             <p class="w3-opacity">Pastor, Gamasara</p>
                             <p style="text-align: left;">Professional Summary. A spirit-filled believer in the salvation of Jesus Christ who pursues an ongoing relationship with God, with several years of experience in church ministry. Experienced in both campus and youth ministry, with a love for all of God's children.</p>
-                            <p><button class="contact mt"><i class=""></i> Contact</button></p>
+                            
                         </div>
                     </div>
                 </div>
     
                 <div class="w3-col l3 m6 w3-margin-bottom">
-                    <div class="w3-card">
+                    <div class="profile-card">
                         <img src="./img/pst4.png" alt="" style="width:100%">
                         <div class="w3-container">
                             <h3>Pastor Petro Rugyo</h3>
                             <p class="w3-opacity">Pastor, Kiongera</p>
                             <p style="text-align: left;">Professional Summary. A spirit-filled believer in the salvation of Jesus Christ who pursues an ongoing relationship with God, with several years of experience in church ministry. Experienced in both campus and youth ministry, with a love for all of God's children.</p>
-                            <p><button class="contact mt"><i class=""></i> Contact</button></p>
+                            
                         </div>
                     </div>
                 </div>
     
                 <div class="w3-col l3 m6 w3-margin-bottom">
-                    <div class="w3-card">
+                    <div class="profile-card">
                         <img src="./img/pst2.png" alt="" style="width:100%">
                         <div class="w3-container">
                             <h3>Pastor Julius Mohono</h3>
                             <p class="w3-opacity">National Secretary, Kewanja</p>
                             <p style="text-align: left;">Professional Summary. A spirit-filled believer in the salvation of Jesus Christ who pursues an ongoing relationship with God, with several years of experience in church ministry. Experienced in both campus and youth ministry, with a love for all of God's children.</p>
-                            <p><button class="contact mt"><i class=""></i> Contact</button></p>
+                            
                         </div>
                     </div>
                 </div>
     
                 <div class="w3-col l3 m6 w3-margin-bottom">
-                    <div class="w3-card">
+                    <div class="profile-card">
                         <img src="./img/team2.png" alt="" style="width:100%">
                         <div class="w3-container">
                             <h3>Dan Star</h3>
                             <p class="w3-opacity">Designer</p>
                             <p style="text-align: left;">Professional Summary. A spirit-filled believer in the salvation of Jesus Christ who pursues an ongoing relationship with God, with several years of experience in church ministry. Experienced in both campus and youth ministry, with a love for all of God's children.</p>
-                            <p><button class="contact mt"><i class=""></i> Contact</button></p>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w3-col l3 m6 w3-margin-bottom">
+                    <div class="profile-card">
+                        <img src="./img/team2.png" alt="" style="width:100%">
+                        <div class="w3-container">
+                            <h3>Dan Star</h3>
+                            <p class="w3-opacity">Designer</p>
+                            <p style="text-align: left;">Professional Summary. A spirit-filled believer in the salvation of Jesus Christ who pursues an ongoing relationship with God, with several years of experience in church ministry. Experienced in both campus and youth ministry, with a love for all of God's children.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w3-col l3 m6 w3-margin-bottom">
+                    <div class="profile-card">
+                        <img src="./img/team2.png" alt="" style="width:100%">
+                        <div class="w3-container">
+                            <h3>Dan Star</h3>
+                            <p class="w3-opacity">Designer</p>
+                            <p style="text-align: left;">Professional Summary. A spirit-filled believer in the salvation of Jesus Christ who pursues an ongoing relationship with God, with several years of experience in church ministry. Experienced in both campus and youth ministry, with a love for all of God's children.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w3-col l3 m6 w3-margin-bottom">
+                    <div class="profile-card">
+                        <img src="./img/team2.png" alt="" style="width:100%">
+                        <div class="w3-container">
+                            <h3>Dan Star</h3>
+                            <p class="w3-opacity">Designer</p>
+                            <p style="text-align: left;">A spirit-filled believer in the salvation of Jesus Christ who pursues an ongoing relationship with God, with several years of experience in church ministry. Experienced in both campus and youth ministry, with a love for all of God's children.</p>
+                            <a href="https://www.fiverr.com/share/qb8D02" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+
                         </div>
                     </div>
                 </div>
@@ -233,10 +291,10 @@
         <!-- End of "Statistics" -->
 
         <!--Projects Section -->
-        <div class="container w3-container w3-center" style="padding:128px 16px" id="Projects">
-            <h3 class="primary mb ">PROJECTS</h3>
+        <div class="container w3-container w3-center" style="padding:64px 16px" id="Projects">
+            <h3 class="primary ">PROJECTS</h3>
             <p class="w3-center #w3-large secondary mb mt">Key Projects of our Church</p>
-            <div class="w3-row-padding w3-center" style="margin-top:64px">
+            <div class="w3-row-padding w3-center">
                 <div class="w3-quarter">
                     <i class="w3-margin-bottom w3-jumbo ">
                         <img src="./img/team2.png" alt="" style="width:100%;border-radius: 8px;" >
@@ -290,7 +348,7 @@
                                 <div class="text-two">+255 6 3434 5678</div>
                             </div>
                             <div class="email details">
-                                <i class="fab fa-envelope"></i>
+                                <ion-icon name="mail-outline"></ion-icon>
                                 <div class="topic">Email</div>
                                 <div class="text-one">internationalcalvary@gmail.com</div>
                                 <div class="text-two">info.icalvary@gmail.com</div>
@@ -408,11 +466,11 @@
                             <span class="logo_name"><img src="./img/logo3.png"></span>
                         </div>
                         <div class="media-icons">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><ion-icon name="logo-facebook" color="#4267B2"></ion-icon></a>
+                            <a href="#"><ion-icon name="logo-twitter" color="#1D9BF0"></ion-icon></a>
+                            <a href="#"><ion-icon name="logo-instagram" color="#E1306C"></ion-icon></a>
+                            <a href="#"><ion-icon name="logo-linkedin" color="#0A66C2"></ion-icon></a>
+                            <a href="#"><ion-icon name="logo-whatsapp" color="#25D366"></ion-icon></a>
                         </div>
                     </div>
                 </div>

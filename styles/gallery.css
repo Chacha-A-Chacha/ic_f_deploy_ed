@@ -79,12 +79,12 @@
 }
 @media (max-width: 520px){
     .gallery-container .images .image-box{
-        height: 400px;
-        width: 280px;
+        height: 140px;
+        width: auto;
         
     }
     .gallery-container{
         align-items: center;
-        flex-direction: row;
+        flex-direction: column;
     }
 }
