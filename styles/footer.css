@@ -140,7 +140,7 @@ footer .footer-content .link-boxes .box{
 }
 .footer-content .link-boxes .box li a:hover{
   opacity: 1;
-  text-decoration: underline;
+ /* text-decoration: underline;*/
 }
 .footer-content .link-boxes .input-box{
   margin-right: 55px;
@@ -196,7 +196,7 @@ footer .bottom-details .bottom_text{
 }
 .bottom-details .bottom_text a:hover{
   opacity: 1;
-  text-decoration: underline;
+  /*text-decoration: underline;*/
 }
 .bottom-details .bottom_text a{
   margin-right: 10px;
@@ -221,7 +221,7 @@ footer .bottom-details .bottom_text{
     height: 35px;
     width: 35px;
     font-size: 14px;
-    line-height: 35px;
+    /*line-height: 35px;*/
   }
   footer .footer-content .link-boxes .box{
     width: calc(100% / 3 - 10px);
