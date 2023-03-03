@@ -24,7 +24,7 @@ footer::before{
   position: absolute;
   left: 0;
   top: 100px;
-  height: 1px;
+  /* height: 1px; */
   width: 100%;
   background: #AFAFB6;
 }
@@ -177,7 +177,8 @@ footer .footer-content .link-boxes .box{
 }
 footer .bottom-details{
   width: 100%;
-  background: #040f16;
+  text-align: center;
+  background: none;
 }
 footer .bottom-details .bottom_text{
   max-width: 1250px;

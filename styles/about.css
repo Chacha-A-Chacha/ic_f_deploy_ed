@@ -39,6 +39,14 @@ legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}t
 ::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
 /* End extract */
 
+/* Full height image header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background: url("./img/bg_image.jpg");
+    min-height: 100%;
+}
+
 .w3-container::after, .w3-container::before, .w3-row-padding:after,.w3-row-padding:before {
     content:"";
     display:table;
