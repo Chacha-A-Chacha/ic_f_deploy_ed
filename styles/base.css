@@ -49,10 +49,9 @@ body {
 .section::after,
 .section::before {
   content: "";
-  background: url(https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/blur-1.png);
+  background: url(/img/bg_image.jpg);
   position: absolute;
-  width: 400px;
-  height: 400px;
+  
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
