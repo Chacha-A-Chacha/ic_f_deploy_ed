@@ -89,9 +89,6 @@ body {
   right: -200px;
 }
 
-.section:nth-child(even) {
-  background: #141615;
-}
 
 .section:nth-child(even)::after,
 .section:nth-child(even)::before {
