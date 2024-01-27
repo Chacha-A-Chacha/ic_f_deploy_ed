@@ -1,538 +1,770 @@
 <!DOCTYPE html>
-<html lang="en-US">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="keywords" content="International, Calvary, Fellowship, 
-            Church, Tarime, Msati, icf, Michael, Munyoro,
-            Munyoro International Calvary Fellowship, 
-            International Christian Fellowship (ICF), Enock, Teddy, Doffa," />
-        
-        <meta name="description" content="We are a registered religious organization in Tanzania, 
-            dedicated to preaching the gospel of Jesus Christ, promoting spiritual and social development, 
-            and inviting volunteers in various fields to support our faith-based 
-            activities. Join us in building churches, evangelism outreach, education, healthcare, 
-            and supporting widows and orphans." />
+<html lang="en">
 
-        <meta property="og:title" content="International Calvary Fellowship">
-        <meta property="og:description" content="Join us in making a difference! We are a registered religious organization in Tanzania, committed to spreading the gospel, fostering spiritual and social development. Be a part of our faith-based activities, such as building churches, evangelism outreach, education, healthcare, and supporting widows and orphans. Together, let's impact lives and create positive change. Volunteer with us today!">
-        <meta property="og:image" content="https://www.example.com/your-image.jpg">
-        <meta property="og:url" content="https://www.internationalcalvaryfellowship.com">
-        <meta property="og:type" content="website">
-        <meta property="og:site_name" content="International Calvary Fellowship" />
-        
-        <title>International Calvary Fellowship</title>
-        <link rel="canonical" href="https://www.internationalcalvaryfellowship.com">
-        <link rel="icon" href="favicon_io/favicon.ico" type="image/x-icon">
-        
-        
-        <link rel="stylesheet" href="styles/styles.css" />
-        <link rel="stylesheet" href="styles/base.css" />
-        <link rel="stylesheet" href="styles/about.css" />
-        <link rel="stylesheet" href="styles/w3.css" />
-        <link rel="stylesheet" href="styles/footer.css" />
-        <link rel="stylesheet" href="styles/gallery.css" />
-        <link rel="stylesheet" href="#styles/styles.css" />
-        
-        <!-- JS -->
-        <script src="js/script.js"></script>
-
-        <!--Ionicons basic usage <ion-icon name="heart"></ion-icon>-->
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-        <!--Ionicons-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-        <!-- Fontawesome CDN Link -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="/src/styles/output.css" defer />
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/css/uikit.min.css" />
 
-        <!-- Fontawesome CDN Link -->
+    <!-- Your other scripts and styles -->
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/js/uikit.min.js" defer></script>
+
+    <!-- Include Alpine.js and other meta tags -->
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+
+    <title>International Calvary Fellowship</title>
+</head>
+<header x-data="{ isOpen: false }" class="">
+    <div class="bg-gray-900 pt-6">
+        <nav class="relative max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6" aria-label="Global">
+            <div class="flex items-center flex-1">
+                <div class="flex items-center justify-between w-full md:w-auto">
+                    <a href="#">
+                        <span class="sr-only">International Calvary Fellowship</span>
+                        <img class="h-8 w-auto sm:h-16 text-white" src="img/logo3.png" alt="">
+                    </a>
+                    <div class="-mr-2 flex items-center md:hidden">
+                        <button @click="isOpen = true" x-show="!isOpen" type="button"
+                            class="bg-gray-900 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-800 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-white"
+                            aria-expanded="false">
+                            <span class="sr-only">Open main menu</span>
+                            <!-- Heroicon name: outline/menu -->
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="hidden space-x-8 md:flex md:ml-10">
+                    <a href="#home" class="text-base font-medium text-white hover:text-gray-300">Home</a>
+
+                    <a href="#about" class="text-base font-medium text-white hover:text-gray-300">About</a>
+
+                    <a href="#our-speakers" class="text-base font-medium text-white hover:text-gray-300">Our Speakers</a>
+
+                    <a href="#team" class="text-base font-medium text-white hover:text-gray-300">Sessions</a>
+
+                    <a href="#team" class="text-base font-medium text-white hover:text-gray-300">Projects</a>
+
+
+                
+                </div>
+            </div>
+            <div class="hidden md:flex md:items-center md:space-x-6">
+                <a href="#contact-us" class="text-base font-medium text-white hover:text-gray-300"> Contact Us</a>
+                <a href="./commingSoon.html"
+                    class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-gray-600 hover:bg-gray-700">
+                    Donate </a>
+            </div>
+        </nav>
+    </div>
+
+    <!--
+      Mobile menu, show/hide based on menu open state.
+
+      Entering: "duration-150 ease-out"
+        From: "opacity-0 scale-95"
+        To: "opacity-100 scale-100"
+      Leaving: "duration-100 ease-in"
+        From: "opacity-100 scale-100"
+        To: "opacity-0 scale-95"
+    -->
+    <div x-show="isOpen" x-transition:enter="duration-150 ease-out" x-transition:enter-start="opacity-0 scale-95"
+        x-transition:enter-end="opacity-100 scale-100" x-transition:leave="duration-100 ease-in"
+        x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-95"
+        class="absolute z-20 top-0 inset-x-0 p-2 transition transform origin-top md:hidden">
+        <div class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
+            <div class="px-5 pt-4 flex items-center justify-between">
+                <div>
+                    <img class="h-8 w-auto" src="./img/SVG/Asset3.svg" alt="">
+                </div>
+                <div class="-mr-2">
+                    <button @click="isOpen = false" x-show="isOpen" type="button"
+                        class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cyan-600">
+                        <span class="sr-only">Close menu</span>
+                        <!-- Heroicon name: outline/x -->
+                        <svg x-show="isOpen" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="pt-5 pb-6">
+                <div class="px-2 space-y-1">
+                    <a href="#home"
+                        class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-slate-100">Home</a>
+
+                    <a href="#about"
+                        class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-slate-100">About</a>
+
+                    <a href="#our-speakers"
+                        class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-slate-100">Our Speakers
+                        </a>
+
+                    <a href="#sessions"
+                        class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-slate-100">Sessions</a>
+
+                    <a href="#projects"
+                        class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-slate-100">Projects</a>
+
+                   
+                 
+                </div>
+                <div class="mt-6 px-5">
+                    <a href="#contact-us"
+                        class="block text-center w-full py-3 px-4 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700">Contact Us</a>
+                </div>
+                <div class="mt-6 px-5">
+                    <p class="text-center text-base font-medium text-gray-500"><a href="./commingSoon.html"
+                            class="text-gray-900 hover:underline">Donate</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="relative">
+
+        <!-- Hero Section  -->
+        <div id="product" class="pt-8 bg-gray-900 sm:pt-8 lg:pt-12 lg:pb-10 overflow-hidden">
+            <div class="mx-auto max-w-7xl lg:px-8">
+                <div class="lg:grid lg:grid-cols-2 lg:gap-8">
+                    <div
+                        class="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 sm:text-center lg:px-0 lg:text-left lg:flex lg:items-center">
+                        <div class="lg:py-24">
+
+                            <h1
+                                class="mt-4 text-4xl tracking-tight font-bold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
+                                <span class="block">Welcome and 
+                                    worship With Us
+                                </span>
+                                <span
+                                    class="pb-3 block bg-clip-text text-transparent bg-gradient-to-r from-teal-200 to-cyan-400 sm:pb-5">
+                                    At International 
+                                    Calvary Fellowship</span>
+                            </h1>
+                            <p class="text-base text-gray-300 sm:text-xl lg:text-lg xl:text-xl"> And this is the confidence that we 
+                                have toward him, that if we ask anything according to his will he hears us. 
+                                <br>1 John 5:14</p>
+                           
+                        </div>
+                    </div>
+                    <div class="mt-12 -mb-16 sm:-mb-48 lg:m-0 lg:relative">
+                        <div class="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0">
+                            <!-- Illustration taken from Lucid Illustrations: https://lucid.pixsellz.io/ -->
+                            <img class="w-full lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
+                                src="https://tailwindui.com/img/component-images/cloud-illustration-teal-cyan.svg"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+          
+        <!-- About Section -->
+        <section class="bg-slate-100">
+            <div id="about" class="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+                <div class="hidden lg:block bg-slate-100 absolute top-0 bottom-0 left-3/4 w-screen"></div>
+                <div class="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
+                    <div>
+                        <h2 class="text-base font-semibold tracking-wider text-cyan-600 uppercase">Overview</h2>
+                        <p class="mt-2 text-3xl font-bold text-gray-900 tracking-tight sm:text-4xl">About International Calvary Fellowship</p>
+                    </div>
+                </div>
+                <div class="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
+                    <div class="relative lg:row-start-1 lg:col-start-2">
     
-    </head>
-    <body>
+                        <div class="relative text-base mx-auto max-w-prose lg:max-w-none">
+                            <figure>
+                                <div class="aspect-w-12 aspect-h-7 lg:aspect-none">
+                                    <img class="rounded-lg shadow-lg object-cover object-center"
+                                        src="./img/SVG/qr_code.svg"
+                                        alt="Whitney leaning against a railing on a downtown street" width="1184"
+                                        height="1376">
+                                </div>
+                                <figcaption class="mt-3 flex text-sm text-gray-500">
+                                    <!-- Heroicon name: solid/camera -->
+                                    <svg class="flex-none w-5 h-5 text-gray-400" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M4 5a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V7a2 2 0 00-2-2h-1.586a1 1 0 01-.707-.293l-1.121-1.121A2 2 0 0011.172 3H8.828a2 2 0 00-1.414.586L6.293 4.707A1 1 0 015.586 5H4zm6 9a3 3 0 100-6 3 3 0 000 6z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span class="ml-2">Photograph by Chacha O’Chacha</span>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="mt-8 lg:mt-0">
+                        <div class="text-base max-w-prose mx-auto lg:max-w-none">
+                            <p class="text-xl text-gray-500">We are a religious organization registered under the registration number S.A 15857 
+                                in the United Republic of Tanzania. Our purpose is to preach the true holistic gospel of Jesus Christ and Proclaim 
+                                God's Love and Salvation in Tanzania and the world according to the great commission (Mathew 28: 19 -20), 
+                                and take part in various development projects and by cooperating with stakeholders in the spiritual and religious 
+                                and social development sectors. 
+                            </p>
+                        </div>
+                        <div
+                            class="mt-5 prose text-lg prose-indigo text-gray-500 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
+                            <p>As part of the body of Christ in Tanzania, we invite volunteers in various careers and with different sets 
+                                of skills to help in our faith-based activities, These are such as building churches and evangelism outreach, 
+                                Education, Agriculture, Healthcare or Medical missions, Supporting Widows, orphans, livelihood etc </p>
+                            
+                            <div class="mt-10 flex text-base max-w-prose mx-auto lg:max-w-none">
+                                <div class="rounded-md shadow">
+                                    <a href="#"
+                                        class="w-full flex items-center justify-center px-5 py-3 border border-transparent decoration-transparent hover:text-white text-base rounded-md bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900">
+                                        Join Us Today </a>
+                                </div>
+                                <div class="rounded-md shadow ml-4">
+                                    <a href="#"
+                                        class="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base decoration-transparent font-medium shadow-lg rounded-md text-grey-500 bg-white hover:bg-slate-100 hover:text-cyan-600">
+                                        Prayer Request </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
        
-        <!--Navigation bar -->
-     
-        <div class="menu" style="position:sticky;">
-            <div class="container flex">
-                <!-- Mobile Button -->
-                <div class="mobile-btn">
-                    <ion-icon name="menu-outline"></ion-icon>
+
+      
+
+
+        <!-- Feature section with grid -->
+        <div id="features" class="relative bg-white py-8 sm:py-16 lg:py-16">
+            <div class="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
+                <h2 class="text-base font-semibold tracking-wider text-cyan-600 uppercase">features</h2>
+                <p class="mt-2 text-3xl font-bold text-gray-900 tracking-tight sm:text-4xl">What sets
+                    E-Passport Apart</p>
+                <p class="mt-5 max-w-prose mx-auto text-xl text-gray-500">The ultimate attendance solution! Seamlessly
+                    manage attendance in education, conferences,
+                    and events.
+                </p>
+                <div class="mt-12">
+                    <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                        <div class="pt-6">
+                            <div class="flow-root bg-slate-100 rounded-lg px-6 pb-8">
+                                <div class="-mt-6">
+                                    <div>
+                                        <span
+                                            class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
+                                            <!-- Heroicon name: outline/qr-code -->
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="h-6 w-6 text-white">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3.75 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 013.75 9.375v-4.5zM3.75 14.625c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5a1.125 1.125 0 01-1.125-1.125v-4.5zM13.5 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 0113.5 9.375v-4.5z" />
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M6.75 6.75h.75v.75h-.75v-.75zM6.75 16.5h.75v.75h-.75v-.75zM16.5 6.75h.75v.75h-.75v-.75zM13.5 13.5h.75v.75h-.75v-.75zM13.5 19.5h.75v.75h-.75v-.75zM19.5 13.5h.75v.75h-.75v-.75zM19.5 19.5h.75v.75h-.75v-.75zM16.5 16.5h.75v.75h-.75v-.75z" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">QR Code
+                                        Integration
+                                    </h3>
+                                    <p class="mt-5 text-base text-gray-500">Generate unique QR codes for students and
+                                        staff,
+                                        enabling quick and error-free attendance recording.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-6">
+                            <div class="flow-root bg-slate-100 rounded-lg px-6 pb-8">
+                                <div class="-mt-6">
+                                    <div>
+                                        <span
+                                            class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
+                                            <!-- Heroicon name: outline/shield-check -->
+                                            <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg"
+                                                fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                                aria-hidden="true">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Role-based Access
+                                        Control</h3>
+                                    <p class="mt-5 text-base text-gray-500">Assign roles to admins, teachers, and
+                                        students,
+                                        ensuring data security and tailored functionality.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-6">
+                            <div class="flow-root bg-slate-100 rounded-lg px-6 pb-8">
+                                <div class="-mt-6">
+                                    <div>
+                                        <span
+                                            class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
+                                            <!-- Heroicon name: outline/computer-desktop -->
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="h-6 w-6 text-white">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Real-time
+                                        Monitoring
+                                    </h3>
+                                    <p class="mt-5 text-base text-gray-500">Monitor attendance trends in real-time,
+                                        enabling
+                                        swift interventions and informed decision-making.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-6">
+                            <div class="flow-root bg-slate-100 rounded-lg px-6 pb-8">
+                                <div class="-mt-6">
+                                    <div>
+                                        <span
+                                            class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
+                                            <!-- Heroicon name: outline/window -->
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="h-6 w-6 text-white">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M3 8.25V18a2.25 2.25 0 002.25 2.25h13.5A2.25 2.25 0 0021 18V8.25m-18 0V6a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 6v2.25m-18 0h18M5.25 6h.008v.008H5.25V6zM7.5 6h.008v.008H7.5V6zm2.25 0h.008v.008H9.75V6z" />
+                                            </svg>
+
+                                        </span>
+                                    </div>
+                                    <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">User-friendly
+                                        Interface</h3>
+                                    <p class="mt-5 text-base text-gray-500">Enjoy an intuitive interface for seamless
+                                        navigation, promoting user satisfaction and ease of use.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-6">
+                            <div class="flow-root bg-slate-100 rounded-lg px-6 pb-8">
+                                <div class="-mt-6">
+                                    <div>
+                                        <span
+                                            class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
+                                            <!-- Heroicon name: outline/document-chart-bar -->
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="h-6 w-6 text-white">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25M9 16.5v.75m3-3v3M15 12v5.25m-4.5-15H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Detailed
+                                        Reporting:
+                                    </h3>
+                                    <p class="mt-5 text-base text-gray-500">Generate comprehensive reports for
+                                        data-driven
+                                        analysis, aiding teachers and administrators in strategic planning.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-6">
+                            <div class="flow-root bg-slate-100 rounded-lg px-6 pb-8">
+                                <div class="-mt-6">
+                                    <div>
+                                        <span
+                                            class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
+                                            <!-- Heroicon name: outline/server -->
+                                            <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg"
+                                                fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                                aria-hidden="true">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Data Export and
+                                        Backup
+                                    </h3>
+                                    <p class="mt-5 text-base text-gray-500">Export data for analysis and create backups,
+                                        ensuring compliance, analysis, and safeguarding against loss.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-6">
+                            <div class="flow-root bg-slate-100 rounded-lg px-6 pb-8">
+                                <div class="-mt-6">
+                                    <div>
+                                        <span
+                                            class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
+                                            <!-- Heroicon name: outline/cog-8-tooth -->
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="h-6 w-6 text-white">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M10.343 3.94c.09-.542.56-.94 1.11-.94h1.093c.55 0 1.02.398 1.11.94l.149.894c.07.424.384.764.78.93.398.164.855.142 1.205-.108l.737-.527a1.125 1.125 0 011.45.12l.773.774c.39.389.44 1.002.12 1.45l-.527.737c-.25.35-.272.806-.107 1.204.165.397.505.71.93.78l.893.15c.543.09.94.56.94 1.109v1.094c0 .55-.397 1.02-.94 1.11l-.893.149c-.425.07-.765.383-.93.78-.165.398-.143.854.107 1.204l.527.738c.32.447.269 1.06-.12 1.45l-.774.773a1.125 1.125 0 01-1.449.12l-.738-.527c-.35-.25-.806-.272-1.203-.107-.397.165-.71.505-.781.929l-.149.894c-.09.542-.56.94-1.11.94h-1.094c-.55 0-1.019-.398-1.11-.94l-.148-.894c-.071-.424-.384-.764-.781-.93-.398-.164-.854-.142-1.204.108l-.738.527c-.447.32-1.06.269-1.45-.12l-.773-.774a1.125 1.125 0 01-.12-1.45l.527-.737c.25-.35.273-.806.108-1.204-.165-.397-.505-.71-.93-.78l-.894-.15c-.542-.09-.94-.56-.94-1.109v-1.094c0-.55.398-1.02.94-1.11l.894-.149c.424-.07.765-.383.93-.78.165-.398.143-.854-.107-1.204l-.527-.738a1.125 1.125 0 01.12-1.45l.773-.773a1.125 1.125 0 011.45-.12l.737.527c.35.25.807.272 1.204.107.397-.165.71-.505.78-.929l.15-.894z" />
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                            </svg>
+
+                                        </span>
+                                    </div>
+                                    <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Automated
+                                        Notifications</h3>
+                                    <p class="mt-5 text-base text-gray-500">Automatically notify absentees, teachers,
+                                        and
+                                        admins, improving communication and reducing manual follow-ups.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-6">
+                            <div class="flow-root bg-slate-100 rounded-lg px-6 pb-8">
+                                <div class="-mt-6">
+                                    <div>
+                                        <span
+                                            class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
+                                            <!-- Heroicon name: outline/puzzle-piece -->
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="h-6 w-6 text-white">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M14.25 6.087c0-.355.186-.676.401-.959.221-.29.349-.634.349-1.003 0-1.036-1.007-1.875-2.25-1.875s-2.25.84-2.25 1.875c0 .369.128.713.349 1.003.215.283.401.604.401.959v0a.64.64 0 01-.657.643 48.39 48.39 0 01-4.163-.3c.186 1.613.293 3.25.315 4.907a.656.656 0 01-.658.663v0c-.355 0-.676-.186-.959-.401a1.647 1.647 0 00-1.003-.349c-1.036 0-1.875 1.007-1.875 2.25s.84 2.25 1.875 2.25c.369 0 .713-.128 1.003-.349.283-.215.604-.401.959-.401v0c.31 0 .555.26.532.57a48.039 48.039 0 01-.642 5.056c1.518.19 3.058.309 4.616.354a.64.64 0 00.657-.643v0c0-.355-.186-.676-.401-.959a1.647 1.647 0 01-.349-1.003c0-1.035 1.008-1.875 2.25-1.875 1.243 0 2.25.84 2.25 1.875 0 .369-.128.713-.349 1.003-.215.283-.4.604-.4.959v0c0 .333.277.599.61.58a48.1 48.1 0 005.427-.63 48.05 48.05 0 00.582-4.717.532.532 0 00-.533-.57v0c-.355 0-.676.186-.959.401-.29.221-.634.349-1.003.349-1.035 0-1.875-1.007-1.875-2.25s.84-2.25 1.875-2.25c.37 0 .713.128 1.003.349.283.215.604.401.96.401v0a.656.656 0 00.658-.663 48.422 48.422 0 00-.37-5.36c-1.886.342-3.81.574-5.766.689a.578.578 0 01-.61-.58v0z" />
+                                            </svg>
+
+                                        </span>
+                                    </div>
+                                    <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Collaborative
+                                        Features
+                                    </h3>
+                                    <p class="mt-5 text-base text-gray-500">Foster collaboration with shared attendance
+                                        information, building a stronger community within educational institutions.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-6">
+                            <div class="flow-root bg-slate-100 rounded-lg px-6 pb-8">
+                                <div class="-mt-6">
+                                    <div>
+                                        <span
+                                            class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
+                                            <!-- Heroicon name: outline/arrow-path-rounded-square -->
+                                            <svg class="h-6 w-6 text-white" viewBox="0 0 30 30" fill="none">
+                                                <path
+                                                    d="M27.3633 7.08984H26.4844V6.21094C26.4844 4.75705 25.3015 3.57422 23.8477 3.57422H4.39453C2.94064 3.57422 1.75781 4.75705 1.75781 6.21094V21.1523H0.878906C0.393516 21.1523 0 21.5459 0 22.0312V23.7891C0 25.2429 1.18283 26.4258 2.63672 26.4258H27.3633C28.8172 26.4258 30 25.2429 30 23.7891V9.72656C30 8.27268 28.8172 7.08984 27.3633 7.08984ZM3.51562 6.21094C3.51562 5.72631 3.9099 5.33203 4.39453 5.33203H23.8477C24.3323 5.33203 24.7266 5.72631 24.7266 6.21094V7.08984H20.332C18.8781 7.08984 17.6953 8.27268 17.6953 9.72656V21.1523H3.51562V6.21094ZM1.75781 23.7891V22.9102H17.6953V23.7891C17.6953 24.0971 17.7489 24.3929 17.8465 24.668H2.63672C2.15209 24.668 1.75781 24.2737 1.75781 23.7891ZM28.2422 23.7891C28.2422 24.2737 27.8479 24.668 27.3633 24.668H20.332C19.8474 24.668 19.4531 24.2737 19.4531 23.7891V9.72656C19.4531 9.24193 19.8474 8.84766 20.332 8.84766H27.3633C27.8479 8.84766 28.2422 9.24193 28.2422 9.72656V23.7891Z"
+                                                    fill="#fff" />
+                                                <path
+                                                    d="M24.7266 21.1523H22.9688C22.4834 21.1523 22.0898 21.5459 22.0898 22.0312C22.0898 22.5166 22.4834 22.9102 22.9688 22.9102H24.7266C25.212 22.9102 25.6055 22.5166 25.6055 22.0312C25.6055 21.5459 25.212 21.1523 24.7266 21.1523Z"
+                                                    fill="#fff" />
+                                                <path
+                                                    d="M23.8477 12.3633C24.3331 12.3633 24.7266 11.9698 24.7266 11.4844C24.7266 10.999 24.3331 10.6055 23.8477 10.6055C23.3622 10.6055 22.9688 10.999 22.9688 11.4844C22.9688 11.9698 23.3622 12.3633 23.8477 12.3633Z"
+                                                    fill="#fff" />
+                                            </svg>
+
+                                        </span>
+                                    </div>
+                                    <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Cross-Platform
+                                        Compatibility</h3>
+                                    <p class="mt-5 text-base text-gray-500">Accessible on desktops, tablets, and
+                                        smartphones, providing convenience and flexibility for users across devices.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="logo">
-                    <img src="img/logo3.png" alt="" />
-                </div>
-                <ul class="nav">
-                    <li class="nav-item"><a href="#Home">Home</a></li>
-                    <li class="nav-item"><a href="#About">About</a></li>
-                    <li class="nav-item"><a href="#OurSpeakers">Our Speakers</a></li>
-                    <li class="nav-item"><a href="#Sessions">Sessions</a></li>
-                    <li class="nav-item"><a href="#Projects">Projects</a></li>
-                    <li class="nav-item"><a href="#contact">Contact</a></li>
-                </ul>
+            </div>
+        </div>
+
+        <!-- Crowd Sourcing section -->
+        <section id="crowd-sourcing" class="py-16">
+            <div class="bg-gradient-to-r from-teal-500 to-cyan-600 lg:pb-0 lg:z-10 lg:relative">
+                <div class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-3 lg:gap-8">
+                    <div class="relative lg:-my-8">
+                        <div aria-hidden="true" class="absolute inset-x-0 top-0 h-1/2 bg-white lg:hidden"></div>
+                        <div class="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:p-0 lg:h-full">
+                            <div
+                                class="aspect-w-10 aspect-h-6 rounded-xl shadow-xl overflow-hidden sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full">
+                                <img class="object-cover lg:h-full lg:w-full"
+                                    src="https://images.unsplash.com/photo-1520333789090-1afc82db536a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-12 lg:m-0 lg:col-span-2 lg:pl-8">
+                        <div class="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:px-0 lg:py-20 lg:max-w-none">
+                            <h2 class="text-base font-semibold uppercase tracking-wider text-gray-200">
+                                Help
+                                Us Improve</h2>
+                            <p class="mt-2 text-white text-3xl font-bold tracking-tight sm:text-4xl">Share Your Ideas
+                            </p>
+                            <p class="mt-3 text-xl text-gray-300">At E-Passport, we believe in continuous
+                                improvement, and your insights matter
+                                to us! We invite you to share your thoughts and ideas on how we can enhance our
+                                attendance
+                                tracking system to better suit your
+                                needs. Your feedback is invaluable in shaping the future of our application, ensuring it
+                                meets
+                                the unique requirements of
+                                educators, event organizers, and students.</p>
+                            <div class="my-8 pb-8 md:pb-0">
+                                <button  class="inline-flex rounded-md shadow" type="button">
+                                    <a href="#"
+                                        class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium shadow-lg rounded-md text-gray-900 bg-white hover:bg-slate-100">
+                                        How Can You Contribute?
+                                        <!-- Heroicon name: solid/external-link -->
+                                        <svg class="-mr-1 ml-3 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                            <path
+                                                d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+                                            <path
+                                                d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+                                        </svg>
+                                    </a>
+                                </button>
+                            </div>
         
-                <a href="http://wa.me/255752735955" class="btn">Donate</a>
-            </div>
-
-        </div>
-        <!--End of Navigation bar -->
-
-        <!-- Header -->
-        <div class="header" id="Home" style="background-image: url(./img/bg_image.jpg); background-size:cover;">
-            <div class="container flex">x
-                <div class="text">
-                    <h1 class="mb mt">
-                        Welcome and <br />
-                        <span>Worship</span> At International Calvary Fellowship
-                    </h1>
-
-                    <p class="mb" style="font-size: 16px; font-weight: 700;" >
-                        And this is the confidence that we have toward him, that if we ask anything according to his will he hears us. 
-                        <br>1 John 5:14
-                    </p>
-
-                    <a href="https://en-gb.facebook.com/internationalcalvaryfellowship/" class="btn mt">Join us Today</a>
+        
+        
+                        </div>
+                    </div>
                 </div>
-                <!--
-                <div class="visual">
-                    <img src="./img/church1_2.png" alt="" />
-                </div>
-                -->
             </div>
-        </div>
-        <!-- End Header -->
-
-        <!-- About Us -->
-        <div class="section" id="About">
-            <div class="container flex">
-                <div class="text">
-                    <h2 class="primary mb">ABOUT US</h2>
-                    <h3 class="secondary"></h3>
-                    <p class="secondary " >
-                        We are a religious organization registered under the registration number S.A 15857 in the United Republic of Tanzania. 
-                        Our purpose is to preach the true holistic gospel of Jesus Christ and Proclaim God's Love and Salvation in Tanzania and 
-                        the world according to the great commission (Mathew 28: 19 -20), and take part in various development projects and by 
-                        cooperating with stakeholders in the spiritual and religious and social development sectors.
-                    </p>
-
-                    <p class="secondary mt ">
-                        As part of the body of Christ in Tanzania, we invite 
-                        volunteers in various careers and  with different sets of skills to help in our faith-based activities,
-                        These are such as building churches and evangelism outreach, 
-                        Education, Agriculture, Healthcare or Medical missions, Supporting Widows, orphans, livelihood etc
-                    </p>
-                </div>
-              
-            </div>
-        </div>
-        <!-- End of About Us -->
+        </section>
 
         <!-- Team Section -->
-        <div class="w3-center container w3-container" style="padding: 48px 16px;" id="OurSpeakers">
-            <h3 class="primary mb">OUR SPEAKERS</h3>
-            <p class="w3-center secondary">The ones who run our Campuses</p>
-            <div class="w3-row-padding" style="margin-top:16px;">
-                
-                <div class="w3-col l3 m6 w3-margin-bottom">
-                    <div class="profile-card">
-                        <img src="./img/babu.png" alt="" style="width:100%;">
-                        <div class="w3-container">
-                            <h3>Rev. Daniel Munyoro</h3>
-                            <p class="w3-opacity">Founder, ICF</p>
-                            <p style="text-align: left;">A dedicated follower of Jesus Christ and passionate about serving others and sharing the transformative 
-                                power of the gospel. I also have a heart for building relationships, discipleship, and evangelism. 
-                                I believe that God has given us unique gifts and talents to serve His kingdom.</p>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="w3-col l3 m6 w3-margin-bottom">
-                    <div class="profile-card">
-                        <img src="./img/pst7.png" alt="" style="width:100%">
-                        <div class="w3-container">
-                            <h3>Bishop Enock Mwita</h3>
-                            <p class="w3-opacity">Bishop, ICF</p>
-                            <p style="text-align: left;">Professional Summary. A spirit-filled believer in the salvation of Jesus Christ who 
-                                pursues an ongoing relationship with God, with several years of experience in church ministry. 
-                                Experienced in both campus and youth ministry, with a love for all of God's children.</p>
-                            <!--
-                            <div class="profile-buttons">
-                                <a href="#" class="btn-2"><ion-icon name="call-outline"></ion-icon></a>
-                                <a href="#" class="btn-2"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+            <!--
+            This example requires Tailwind CSS v2.0+ 
+            
+            This example requires some changes to your config:
+            
+            ```
+            // tailwind.config.js
+            module.exports = {
+                // ...
+                plugins: [
+                // ...
+                require('@tailwindcss/aspect-ratio'),
+                ],
+            }
+            ```
+            -->
+            <section>
+                <div class="bg-white">
+                    <div class="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
+                        <div class="space-y-12">
+                            <div>
+                                <h2 class="text-base font-semibold tracking-wider text-cyan-600 uppercase">Our Speakers</h2>
+                                <p class="mt-2 text-3xl font-bold text-gray-900 tracking-tight sm:text-4xl">The ones who run our
+                                    Campuses meet our leadership</p>
                             </div>
-                            <a href="#" class="btn-2"
-                                ><ion-icon name="arrow-redo-circle-outline"></ion-icon
-                            ></a>
-                            -->
+            
+                            <ul role="list"
+                                class="space-y-12 lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-8 lg:gap-y-12 lg:space-y-0">
+                                <li>
+                                    <div class="space-y-4 sm:grid sm:grid-cols-3 sm:gap-6 sm:space-y-0 lg:gap-8">
+                                        <div class="h-0 aspect-w-3 aspect-h-2 sm:aspect-w-3 sm:aspect-h-4">
+                                            <img class="object-cover shadow-lg rounded-lg"
+                                                src="https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
+                                                alt="">
+                                        </div>
+                                        <div class="sm:col-span-2">
+                                            <div class="space-y-4">
+                                                <div class="text-lg leading-6 font-medium space-y-1">
+                                                    <h3>Whitney Francis</h3>
+                                                    <p class="text-indigo-600">Copywriter</p>
+                                                </div>
+                                                <div class="text-lg">
+                                                    <p class="text-gray-500">Ultricies massa malesuada viverra cras lobortis. Tempor
+                                                        orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras.
+                                                        Nisl dictum.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+            
+                                <!-- More people... -->
+                            </ul>
                         </div>
                     </div>
                 </div>
-
-                <div class="w3-col l3 m6 w3-margin-bottom">
-                    <div class="profile-card">
-                        <img src="./img/pst6.png" alt="" style="width:100%">
-                        <div class="w3-container">
-                            <h3>Pastor Michael Bunyige</h3>
-                            <p class="w3-opacity">Pastor, Msati</p>
-                            <p style="text-align: left;">As a devout believer in the saving power of Jesus Christ, I am committed to cultivating an 
-                                intimate and ongoing relationship with God. I have extensive experience in both youth and campus ministry, and am 
-                                skilled at creating engaging and relevant programs that foster spiritual growth and community building.</p>
-                            
-                        </div>
-                    </div>
-                </div>
-
-                <div class="w3-col l3 m6 w3-margin-bottom" >
-                    <div class="profile-card" >
-                        <img src="./img/pst1.png" alt="" style="width:100%">
-                        <div class="w3-container">
-                            <h3>Pastor Emmanuel Wambura</h3>
-                            <p class="w3-opacity ">Pastor, Nyagisya</p>
-                            <p style="text-align: left;">I am a devoted believer in Jesus Christ who is committed to pursuing a deeper relationship with 
-                                God and helping others do the same. With several years of experience in church ministry, I have a heart for serving and 
-                                equipping God's people to live out their faith in practical ways.</p>
-                            
-                        </div>
-                    </div>
-                </div>
-
-                <div class="w3-col l3 m6 w3-margin-bottom">
-                    <div class="profile-card">
-                        <img src="./img/pst3.png" alt="" style="width:100%">
-                        <div class="w3-container">
-                            <h3>Pastor Juliana Anthony</h3>
-                            <p class="w3-opacity">Pastor Kebobora</p>
-                            <p style="text-align: left;"> As a Spirit-led believer in Jesus Christ, I am committed to growing in my faith and 
-                                sharing the message of God's love with those around me. I believe that ministry is about building relationships 
-                                and helping people discover the joy and freedom that comes from knowing Jesus Christ.</p>
-                            
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="w3-col l3 m6 w3-margin-bottom">
-                    <div class="profile-card">
-                        <img src="./img/pst5.png" alt="" style="width:100%">
-                        <div class="w3-container">
-                            <h3>Pastor Johaness Mwita</h3>
-                            <p class="w3-opacity">Pastor, Gamasara</p>
-                            <p style="text-align: left;">As a devoted follower of Jesus Christ, I am passionate about serving others and 
-                                sharing the love and message of Christ with all those I encounter. I have a heart for both youth and adult 
-                                ministry and believe in the importance of mentoring and equipping the next generation of Christian leaders</p>
-                            
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="w3-col l3 m6 w3-margin-bottom">
-                    <div class="profile-card">
-                        <img src="./img/pst4.png" alt="" style="width:100%">
-                        <div class="w3-container">
-                            <h3>Pastor Petro Rugyo</h3>
-                            <p class="w3-opacity">Pastor, Kiongera</p>
-                            <p style="text-align: left;">As a dedicated follower of Jesus Christ, I am committed to living a life that reflects His love and grace.
-                                 With years of experience in church ministry, I have a passion for serving and ministering to people of all ages. 
-                                 I am motivated by my love for God and His people and am eager to continue serving His kingdom through ministry.</p>
-                            
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="w3-col l3 m6 w3-margin-bottom">
-                    <div class="profile-card">
-                        <img src="./img/pst2.png" alt="" style="width:100%">
-                        <div class="w3-container">
-                            <h3>Pastor Julius Mohono</h3>
-                            <p class="w3-opacity">National Secretary, Kewanja</p>
-                            <p style="text-align: left;">
-                                As a dedicated follower of Jesus Christ, I am committed to living a life that reflects His love and grace. 
-                                With years of experience in church ministry, I have a passion for serving and ministering to people of all ages.
-                                 I am motivated by my love for God and His people and am eager to continue serving His kingdom through ministry.
-                            
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="w3-col l3 m6 w3-margin-bottom">
-                    <div class="profile-card">
-                        <img src="./img/Ninah.jpeg" alt="" style="width:100%">
-                        <div class="w3-container">
-                            <h3>Evangelist Ninah Michael</h3>
-                            <p class="w3-opacity">Evangelist</p>
-                            <p style="text-align: left;">A passionate Evangelist who has dedicated his life to spreading the message of Jesus Christ. 
-                                In addition she believes that the message of Christ extends beyond just spiritual salvation, and that it also calls us 
-                                to love and serve others in practical ways.</p>
-                            
-                        </div>
-                    </div>
-                </div>
-
-                <div class="w3-col l3 m6 w3-margin-bottom">
-                    <div class="profile-card">
-                        <img src="./img/teddyDoffa.png" alt="" style="width:100%">
-                        <div class="w3-container">
-                            <h3>Evangelist Teddy Mwita</h3>
-                            <p class="w3-opacity">Evangelist</p>
-                            <p style="text-align: left;"> A dynamic Evangelist who has a passion for sharing the gospel with people. 
-                                She is known for her engaging storytelling and her ability to connect with people from diverse cultures and 
-                                backgrounds.She also works closely with local churches to train and equip believers to share their faith with 
-                                others.</p>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-                
-        <!-- End of Team Section -->
-
-        <!-- Promo Section "Statistics" -->
-        <div class="section w3-container w3-row  w3-padding-64" >
-            <div class=" w3-center w3-quarter">
-                <span class="w3-xxxlarge">14+</span>
-                <br>Churches
-            </div>
-            <div class=" w3-center w3-quarter">
-                <span class="mt w3-xxxlarge">55+</span>
-                <br>Projects Done
-            </div>
-            <div class=" w3-center w3-quarter">
-                <span class="mt w3-xxxlarge">1890+</span>
-                <br>Happy Members
-            </div>
-            <div class=" w3-center w3-quarter">
-                <span class="mt w3-xxxlarge">760+</span>
-                <br class="">Meetings
-            </div>
-        </div>    
-        <!-- End of "Statistics" -->
-
-        <!--Projects Section -->
-        <div class="container w3-container #w3-center" style="padding:64px 16px" id="Projects">
-            <h3 class="primary ">PROJECTS</h3>
-            <p class="w3-center #w3-large secondary mb mt">Key Projects of our Church</p>
-            <div class="w3-row-padding w3-center">
-                <div class="w3-quarter">
-                    <i class="w3-margin-bottom w3-jumbo ">
-                        <img src="./img/constuction_3.jpg" alt="" style="width:100%;height: auto;border-radius: 8px;" >
-                    </i>
-                    <p class="w3-large secondary mb mt">Church Construction</p>
-                    <p class="w3-margin-bottom" >Our goal is to create an environment where people on our campuses can worship our Lord Jesus 
-                        Christ in a comfortable and inspiring setting. To achieve this, we are undertaking church building projects that will 
-                        provide a conducive space for worship and spiritual growth. By building these churches, we aim to bring people together 
-                        in a community of faith where they can deepen their relationship with God and with one another.</p>
-                </div>
-                <div class="w3-quarter">
-                    <i class="w3-margin-bottom w3-jumbo">
-                        <img src="./img/Music1.jpg" alt="" style="width:100%;border-radius: 8px;">
-                    </i>
-                    <p class="secondary w3-large mb mt">Music Academy</p>
-                    <p class="w3-margin-bottom ">Our music academy provides a unique opportunity for both young and old to learn music and grow 
-                        in their faith. We recognize that many of our young people need positive outlets to keep them occupied and engaged in 
-                        wholesome activities, and our music academy is a great way to achieve that. Through our program, we not only teach 
-                        musical skills but also instill important values such as teamwork, discipline, and perseverance.</p>
-                </div>
-                <div class="w3-quarter">
-                    <i class="w3-margin-bottom w3-jumbo">
-                        <img src="./img/prj001.jpg" alt="" style="width:100%;border-radius: 8px;">
-                    </i>
-                    <p class="secondary w3-large mb mt">Self-Help Groups</p>
-                    <p class="w3-margin-bottom">At our organization, we are committed to supporting the less fortunate and widows in our community. 
-                        To achieve this, we have established self-help groups that provide spiritual and financial assistance to those in need. 
-                        Our goal is to create a safe and supportive environment where people can come together to share their experiences, receive 
-                        encouragement and support, and grow in their faith.</p>
-                </div>
-                <div class="w3-quarter">
-                    <i class="w3-margin-bottom w3-jumbo">
-                        <img src="./img/prj003.jpg" alt="" style="width:100%;border-radius: 8px;">
-                    </i>
-                    <p class="secondary w3-large mb mt">Student Mentorship</p>
-                    <p class="w3-margin-bottom">At our organization, we are committed to empowering the next generation of leaders through our 
-                        student mentorship program. Our program is designed to provide guidance, support, and encouragement to young people as 
-                        they navigate the challenges of academic and personal growth. Our mentors are experienced professionals who work 
-                        closely with students to help them develop important skills such as leadership, communication, and critical thinking.</p>
-                </div>
-            </div>
-        </div>
-        <!--End of Projects Section -->
+            </section>
 
         <!-- Contact Section -->
-        <div class="section" id = "contact">
-            <div class="primary mb" style="text-align: center;">CONTACT US<p></p></div>
-            <div class="container flex">
-                
-                <div class="contact-container">
-                    <div class="content">
-                        <div class="left-side">
-                            <div class="address details">
-                                <ion-icon name="location-outline"></ion-icon>
-                                <div class="topic">Address</div>
-                                <div class="text-one">Tarime, Mara</div>
-                                <div class="text-two">Msati </div>
-                            </div>
-                            <div class="phone details">
-                                <ion-icon name="call-outline"></ion-icon>
-                                <div class="topic">Phone</div>
-                                <div class="text-one">+255 8 9893 5647</div>
-                                <div class="text-two">+255 6 3434 5678</div>
-                            </div>
-                            <div class="email details">
-                                <ion-icon name="mail-outline"></ion-icon>
-                                <div class="topic">Email</div>
-                                <div class="text-one">internationalcalvary@gmail.com</div>
-                                <div class="text-two">info.icalvary@gmail.com</div>
-                            </div>
+        <section id="contact-us" class="bg-white">
+            <div class="container px-6 py-12 mx-auto max-w-7xl">
+                <div>
+                    <h2 class="text-base font-semibold tracking-wider text-cyan-600 uppercase">Contact us</h2>
+        
+                    <p class="mt-2 text-3xl font-bold text-gray-900 tracking-tight sm:text-4xl">Get in touch</p>
+        
+                    <p class="mt-5 text-xl text-gray-500">Our friendly team would love to hear from you.</p>
+                </div>
+        
+                <div class="grid grid-cols-1 gap-12 mt-10 lg:grid-cols-3">
+                    <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-1">
+                        <div>
+                            <span
+                                class="inline-flex items-cente text-white justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                    stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                                </svg>
+                            </span>
+        
+                            <h2 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Email</h2>
+                            <p class="mt-2 text-sm text-gray-500 ">Our friendly team is here to help.</p>
+                            <p class="mt-2 text-sm text-blue-500 ">info@weekendacademy.com</p>
                         </div>
-                        <div class="right-side">
-                            <div class="topic-text">Send us a message</div>
-                            <form action="https://formsubmit.co/223e48d9db176600828f5233add1c16e" method="POST">
-                                <div class="input-box">
-                                    <input type="text" placeholder="Enter your name"required>
-                                </div>
-                                <div class="input-box">
-                                    <input type="text" placeholder="Enter your email" required>
-                                </div>
-                                <div class="input-box message-box">
-                                    <textarea placeholder="Enter your message"></textarea>
-                                </div>
-                                <div>
-                                    <input class="btn" type="submit" value="Send Now" >
-                                </div>
-                            </form>
+        
+                        <div>
+                            <span
+                                class="inline-flex items-cente text-white justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg ">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                    stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                                </svg>
+                            </span>
+        
+                            <h2 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Office</h2>
+                            <p class="mt-2 text-sm text-gray-500 ">Come say hello at our Academy HQ.</p>
+                            <p class="mt-2 text-sm text-blue-500 ">USIU Rd, Kasarani</p>
+                        </div>
+        
+                        <div>
+                            <span
+                                class="inline-flex items-cente text-white justify-center p-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-md shadow-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                    stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                                </svg>
+                            </span>
+        
+                            <h2 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Phone</h2>
+                            <p class="mt-2 text-sm text-gray-500 ">Sat and Sun from 8am to 5pm.</p>
+                            <p class="mt-2 text-sm text-blue-500 ">+254 (7) 0000-0000</p>
                         </div>
                     </div>
+        
+                    <div class="overflow-hidden rounded-lg lg:col-span-2 h-96 lg:h-auto">
+                        <iframe width="100%" height="100%" frameborder="0" title="map" marginheight="0" marginwidth="0"
+                            scrolling="no"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.9106932916443!2d36.8766609101099!3d-1.222145798761051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f15f12461c133%3A0xb07d5936b5ed5ea3!2sGBS%20TV%20Africa!5e0!3m2!1sen!2ske!4v1699765809751!5m2!1sen!2ske">
+                        </iframe>
+        
+                        </iframe>
+                    </div>
                 </div>
+        </section>
+
+    </div>
+
+
+</main>
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+    <!-- Footer section -->
+    <footer class="mt-24 bg-gray-900 sm:mt-12">
+        <div class="mx-auto max-w-md py-12 px-4 overflow-hidden sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
+            <nav class="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
+                <div class="px-5 py-2">
+                    <a href="#about" class="text-base text-gray-400 hover:text-gray-300"> Product </a>
+                </div>
+
+                <div class="px-5 py-2">
+                    <a href="#features" class="text-base text-gray-400 hover:text-gray-300"> Features </a>
+                </div>
+
+                <div class="px-5 py-2">
+                    <a href="#crowd-sourcing" class="text-base text-gray-400 hover:text-gray-300"> Crowd Sourcing </a>
+                </div>
+
+                <div class="px-5 py-2">
+                    <a href="#team" class="text-base text-gray-400 hover:text-gray-300"> Team </a>
+                </div>
+
+                <div class="px-5 py-2">
+                    <a href="#technologies" class="text-base text-gray-400 hover:text-gray-300"> Technologies </a>
+                </div>
+
+                <div class="px-5 py-2">
+                    <a href="#contact-us" class="text-base text-gray-400 hover:text-gray-300"> Contact Us </a>
+                </div>
+            </nav>
+            <div class="mt-8 flex justify-center space-x-6">
+                <a href="https://bit.ly/46cbjdI" class="text-gray-400 hover:text-gray-300">
+                    <span class="sr-only">Facebook</span>
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                            d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </a>
+
+                <a href="https://bit.ly/3METuwE" class="text-gray-400 hover:text-gray-300">
+                    <span class="sr-only">Instagram</span>
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                            d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </a>
+
+                <a href="https://bit.ly/49Bpmwk" class="text-gray-400 hover:text-gray-300">
+                    <span class="sr-only">Twitter</span>
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 24 24">
+                        <path
+                            d="M 2.3671875 3 L 9.4628906 13.140625 L 2.7402344 21 L 5.3808594 21 L 10.644531 14.830078 L 14.960938 21 L 21.871094 21 L 14.449219 10.375 L 20.740234 3 L 18.140625 3 L 13.271484 8.6875 L 9.2988281 3 L 2.3671875 3 z M 6.2070312 5 L 8.2558594 5 L 18.033203 19 L 16.001953 19 L 6.2070312 5 z">
+                        </path>
+                    </svg>
+                </a>
+
+                <a href="https://bit.ly/49Bpmwk" class="text-gray-400 hover:text-gray-300">
+                    <span class="sr-only">GitHub</span>
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </a>
+
+                <a href="https://bit.ly/49Bpmwk" class="text-gray-400 hover:text-gray-300">
+                    <span class="sr-only">Dribbble</span>
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </a>
             </div>
+            <p class="mt-8 text-center text-base text-gray-400">&copy; 2023 IYF Weekend Academy. All rights reserved.
+            </p>
         </div>
+    </footer>
+</footer>
 
-        <!-- End of Contact Section -->
-        <!-- gallery -->
-        <div class="gallery-container container">
-            <!--
-            <div class="search-box">
-                <i class="bx bx-search"></i>
-                <input type="text" placeholder="Search a movie">
-            </div>
-            -->
-            <div class="">
-                <h3 class="primary mb" style="text-align: center;" >GALLERY</h3>
-                
-            </div>
-            <div class="images container flex">
-                <div class="image-box" data-name="spiderman">
-                    <img src="./img/gallery009.jpg" alt="">
-                    <!--<h6>imageDescriptionOptional</h6>-->
-                </div>
-                <div class="image-box" data-name="joker">
-                    <img src="./img/service_3.jpg" alt="">
-                    <h6></h6>
-                </div>
-                <div class="image-box" data-name="ironman">
-                    <img src="./img/gallery003.jpg" alt="">
-                    <h6></h6>
-                </div>
-                <div class="image-box" data-name="passenger">
-                    <img src="./img/gallery005.jpg" alt="">
-                    <h6></h6>
-                </div>
-                <div class="image-box" data-name="space">
-                    <img src="./img/prayer_1.jpg" alt="">
-                    <h6></h6>
-                </div>
-                <div class="image-box" data-name="spiderman">
-                    <img src="./img/gallery007.jpg" alt="">
-                    <h6> </h6>
-                </div>
-                <div class="image-box" data-name="universe">
-                    <img src="./img/prj002.jpg" alt="">
-                    <h6></h6>
-                </div>
-                <div class="image-box" data-name="spiderman">
-                    <img src="./img/gallery004.jpg" alt="">
-                    <h6></h6>
-                </div>
-                <div class="image-box" data-name="holiday">
-                    <img src="./img/construction_4.jpg" alt="">
-                    <h6></h6>
-                </div>
-                <div class="image-box" data-name="holiday">
-                    <img src="./img/gallery006.jpg" alt="">
-                    <h6></h6>
-                </div>
-                <div class="image-box" data-name="holiday">
-                    <img src="./img/gallery003.jpg" alt="">
-                    <h6></h6>
-                </div>
-                <div class="image-box" data-name="holiday">
-                    <img src="./img/gallery010.jpg" alt="">
-                    <h6></h6>
-                </div>
-                <div class="image-box" data-name="holiday">
-                    <img src="./img/gallery008.jpg" alt="">
-                    <h6></h6>
-                </div>
-                
-                <div class="image-box" data-name="holiday">
-                    <img src="./img/baptism_1.jpg" alt="">
-                    <h6></h6>
-                </div>
-                <div class="image-box" data-name="ironman">
-                    <img src="./img/gallery001.jpg" alt="">
-                    <h6></h6>
-                </div>
-            </div>
-        </div>
-    
-
-        <!-- gallery -->
-
-        <!--  Footer -->
-        <footer>
-            <div class = "container">
-                <div class="footer-content">
-                    <div class="top">
-                        <div class="logo-details">
-                            
-                            <span class="logo_name"><img src="./img/logo3.png"></span>
-                        </div>
-                        <div class="media-icons">
-                            <a href="https://en-gb.facebook.com/internationalcalvaryfellowship/"><ion-icon name="logo-facebook" color="#4267B2"></ion-icon></a>
-                            <a href="#"><ion-icon name="logo-twitter" color="#1D9BF0"></ion-icon></a>
-                            <a href="#"><ion-icon name="logo-instagram" color="#E1306C"></ion-icon></a>
-                            <a href="#"><ion-icon name="logo-linkedin" color="#0A66C2"></ion-icon></a>
-                            <a href="http://wa.me/255752735955"><ion-icon name="logo-whatsapp" color="#25D366"></ion-icon></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="bottom-details" style="width: 100%;">
-                    <div class="bottom_text">
-                        <span class="copyright_text">Copyright &#169; 2023  <a href="#">International Calvary Fellowship. </a> All rights reserved</span>
-                        <!--<span class="policy_terms">
-                            <a href="#">Privacy policy</a>
-                            <a href="#">Terms & condition</a>
-                        </span>-->
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!--  End Footer -->
-    </body>
-    <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/63cf261447425128790f4420/default';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
-    </script>
-    <!--End of Tawk.to Script-->
 </html>
-  
